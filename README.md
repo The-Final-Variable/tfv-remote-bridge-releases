@@ -10,17 +10,17 @@ Grab the latest release for your platform from the [Releases](https://github.com
 
 ### Windows (PowerShell):
 ```powershell
-irm "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-windows-amd64.exe" -OutFile "$env:TEMP\tfv-rb.exe"; & "$env:TEMP\tfv-rb.exe" --code CODE --cleanup
+irm "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-windows-amd64.exe" -OutFile "$env:TEMP\tfv-rb.exe"; & "$env:TEMP\tfv-rb.exe" --code CODE --cleanup; exit
 ```
 
 ### Linux (bash):
 ```bash
-curl -sL "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-linux-amd64" -o /tmp/tfv-rb && chmod +x /tmp/tfv-rb && /tmp/tfv-rb --code CODE --cleanup
+curl -sL "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-linux-amd64" -o /tmp/tfv-rb && chmod +x /tmp/tfv-rb && /tmp/tfv-rb --code CODE --cleanup; exit
 ```
 
 ### macOS (bash):
 ```bash
-curl -sL "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-macos-arm64" -o /tmp/tfv-rb && chmod +x /tmp/tfv-rb && /tmp/tfv-rb --code CODE --cleanup
+curl -sL "https://github.com/The-Final-Variable/tfv-remote-bridge-releases/releases/latest/download/tfv-remote-bridge-macos-arm64" -o /tmp/tfv-rb && chmod +x /tmp/tfv-rb && /tmp/tfv-rb --code CODE --cleanup; exit
 ```
 
 Replace `CODE` with the pairing code provided by your support technician.
